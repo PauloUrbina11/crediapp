@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "676967407632",
+    "project_id": "crediapp-bab5a",
+    "storage_bucket": "crediapp-bab5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676967407632:android:9788f005bac9b5df676a95",
+        "android_client_info": {
+          "package_name": "com.test.crediapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676967407632-f0n7djkenfn6po4tqv2uq1j61fs2l56c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfpACrRBbbSdmLEjaJPhstnaM8zk7Lz2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676967407632-f0n7djkenfn6po4tqv2uq1j61fs2l56c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
