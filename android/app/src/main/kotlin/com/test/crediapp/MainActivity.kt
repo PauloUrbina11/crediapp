@@ -1,4 +1,4 @@
-package com.example.credi_app
+package com.test.crediapp
 
 import io.flutter.embedding.android.FlutterActivity
 
