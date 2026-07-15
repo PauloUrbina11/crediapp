@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/utils/currency_formatter.dart';
 import '../providers/credit_history_provider.dart';
+import 'saved_credit_detail_page.dart';
 
 class CreditHistoryPage extends StatelessWidget {
   const CreditHistoryPage({super.key});
@@ -25,6 +26,12 @@ class CreditHistoryPage extends StatelessWidget {
                     title: Text(item.creditTypeLabel),
                     subtitle: Text('${item.numberOfMonths} meses'),
                     trailing: Text(CurrencyFormatter.format(item.loanAmount)),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => SavedCreditDetailPage(savedCredit: item),
+                      ),
+                    ),
                   ),
                 );
               },

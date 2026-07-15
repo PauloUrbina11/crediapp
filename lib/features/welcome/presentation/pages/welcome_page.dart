@@ -28,6 +28,8 @@ class _WelcomePageState extends State<WelcomePage> {
     ),
   ];
 
+  bool _precached = false;
+
   @override
   void initState() {
     super.initState();
@@ -39,6 +41,18 @@ class _WelcomePageState extends State<WelcomePage> {
         curve: Curves.easeInOut,
       );
     });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Decode every slide up front so switching pages never blocks on a fresh decode.
+    if (!_precached) {
+      _precached = true;
+      for (final slide in _slides) {
+        precacheImage(AssetImage(slide.imagePath), context);
+      }
+    }
   }
 
   @override
